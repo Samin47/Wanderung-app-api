@@ -18,16 +18,12 @@ use App\Http\Controllers\PlaceController;
 
 
 
-// User Authentication
 Route::post('/signup', [UserController::class, 'signup']);
 Route::post('/login', [UserController::class, 'login']);
 
-// Nearby Places
-Route::middleware('auth:api')->group(function () {
+
+Route::middleware('auth:sanctum')->group(function () {
     Route::get('/places', [PlaceController::class, 'getNearbyPlaces']);
 });
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
