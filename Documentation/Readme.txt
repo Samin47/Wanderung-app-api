@@ -5,6 +5,19 @@ Title: API Development with Geolocation and User Authentication
 - PHP 7.3 or higher
 - Laravel 8.75 or higher
 
+## Description ##
+
+This project is a RESTful API that allows users to discover nearby places based on their geographical coordinates. It leverages the Foursquare API to retrieve information about nearby restaurants, cafes, attractions, and other points of interest.
+
+Key Features:
+
+- User Registration: Users can sign up for an account by providing their email and password.
+- User Authentication: Registered users can log in to obtain an authentication token for accessing protected endpoints.
+- Nearby Places Search: Users can search for nearby places by providing their latitude and longitude coordinates.
+- Radius and Limit Customization: Users have the option to specify the search radius and limit the number of places returned.
+- API Integration: The project integrates with the Foursquare API to retrieve detailed information about the nearby places.
+
+
 
 ## Installation ##
 
@@ -33,6 +46,7 @@ This will create the database specified in the .env file.
 
 7. Start the development server:(command)
 	-php artisan serve
+
 
 
 
