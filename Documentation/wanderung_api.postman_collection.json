@@ -1,0 +1,548 @@
+{
+	"info": {
+		"_postman_id": "078a02b7-f8e0-4135-9474-40e4343372bd",
+		"name": "wanderung_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13353786"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "samin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "samin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Samin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "samin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "samin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Samin123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:20:40 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:20:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User registered successfully\",\n    \"user\": {\n        \"name\": \"samin\",\n        \"email\": \"samin@gmail.com\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "samin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Samin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "samin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Samin123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:26:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:26:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login successful\",\n    \"token\": \"9|vpCTM3FwmiVMUwrHdrZk2hyScVblY6Zdl5zBQo8Y\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Places",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 9|vpCTM3FwmiVMUwrHdrZk2hyScVblY6Zdl5zBQo8Y",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/places?lat=-34.4407&long=-58.7052&limit=40&radius=10000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"places"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "-34.4407"
+						},
+						{
+							"key": "long",
+							"value": "-58.7052"
+						},
+						{
+							"key": "limit",
+							"value": "40"
+						},
+						{
+							"key": "radius",
+							"value": "10000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Places",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9|vpCTM3FwmiVMUwrHdrZk2hyScVblY6Zdl5zBQo8Y",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/places?lat=-34.4407&long=-58.7052&limit=40&radius=10000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"places"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-34.4407"
+								},
+								{
+									"key": "long",
+									"value": "-58.7052"
+								},
+								{
+									"key": "limit",
+									"value": "40"
+								},
+								{
+									"key": "radius",
+									"value": "10000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:32:42 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:32:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Kurt y Horacio\",\n        \"category\": \"German Restaurant\",\n        \"address\": \"Av. Henry Ford 2908 (Carlos Delcasse), 1617 General Pacheco, Buenos Aires\",\n        \"distance from given coordinates\": \"1580 meters\",\n        \"latitude\": -34.447761,\n        \"longitude\": -58.688874,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Zara\",\n        \"category\": \"Clothing Store\",\n        \"address\": \"Tortugas Open Mall, 1619 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2384 meters\",\n        \"latitude\": -34.45216,\n        \"longitude\": -58.727087,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"El Mirasol\",\n        \"category\": \"Argentinian Restaurant\",\n        \"address\": \"Colectora Acceso Norte Ramal Pilar, Buenos Aires, Buenos Aires\",\n        \"distance from given coordinates\": \"2357 meters\",\n        \"latitude\": -34.453717,\n        \"longitude\": -58.729706,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"ALG Golf\",\n        \"category\": \"Golf Course\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"2621 meters\",\n        \"latitude\": -34.461394,\n        \"longitude\": -58.718974,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Nona Catalina\",\n        \"category\": \"Argentinian Restaurant\",\n        \"address\": \"Av. De Los Constituyentes 2797, 1621 General Pacheco, Buenos Aires\",\n        \"distance from given coordinates\": \"2382 meters\",\n        \"latitude\": -34.441859,\n        \"longitude\": -58.679306,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"DIRECTV Arena\",\n        \"category\": \"Concert Hall\",\n        \"address\": \"Av. Olivos 3215, Panamericana km 35,5. (esq. Estados Unidos), 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2577 meters\",\n        \"latitude\": -34.461311,\n        \"longitude\": -58.71786,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Olivos Golf Club\",\n        \"category\": \"Golf Course\",\n        \"address\": \"Panamericana kilometro 32,5 ramal Pilar (Av. Olivos), 1613, Buenos Aires\",\n        \"distance from given coordinates\": \"3295 meters\",\n        \"latitude\": -34.470213,\n        \"longitude\": -58.701717,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Morph\",\n        \"category\": \"Retail\",\n        \"address\": \"Ramal Pilar Km 36.5, Tortuguitas, Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2509 meters\",\n        \"latitude\": -34.453107,\n        \"longitude\": -58.728237,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"El Fogon\",\n        \"category\": \"Argentinian Restaurant\",\n        \"address\": \"Mateo Churich 900-999, 1619 Garín, Buenos Aires\",\n        \"distance from given coordinates\": \"3278 meters\",\n        \"latitude\": -34.416929,\n        \"longitude\": -58.726288,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Aranzazu\",\n        \"category\": \"Park\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"2551 meters\",\n        \"latitude\": -34.440388,\n        \"longitude\": -58.73315,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Mundo Cartoon Network\",\n        \"category\": \"Arts and Entertainment\",\n        \"address\": \"Tortugas Open Mall, 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2419 meters\",\n        \"latitude\": -34.452309,\n        \"longitude\": -58.727426,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Deck 39\",\n        \"category\": \"Lounge\",\n        \"address\": \"Calle Chilavert, 1621 Benavídez, Buenos Aires\",\n        \"distance from given coordinates\": \"3172 meters\",\n        \"latitude\": -34.413456,\n        \"longitude\": -58.715928,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"The Coffee Store\",\n        \"category\": \"Coffee Shop\",\n        \"address\": \"Tortugas Open Mall, Buenos Aires, Buenos Aires F.C.\",\n        \"distance from given coordinates\": \"2267 meters\",\n        \"latitude\": -34.451793,\n        \"longitude\": -58.72585,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Defain Miraflores CC\",\n        \"category\": \"Dessert Shop\",\n        \"address\": \"Pilar\",\n        \"distance from given coordinates\": \"2890 meters\",\n        \"latitude\": -34.444787,\n        \"longitude\": -58.736353,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"The Embers\",\n        \"category\": \"Burger Joint\",\n        \"address\": \"Autopista Panamericana Ramal Pilar Km 36. 5 Tortuguitas Open Mall, Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2343 meters\",\n        \"latitude\": -34.452489,\n        \"longitude\": -58.72649,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Tortugas Open Mall\",\n        \"category\": \"Shopping Mall\",\n        \"address\": \"Panamericana Ramal Pilar Km. 36,5, 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2421 meters\",\n        \"latitude\": -34.452842,\n        \"longitude\": -58.727171,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Asador las Marias\",\n        \"category\": \"Argentinian Restaurant\",\n        \"address\": \"Ruta 27 N_ 2850 a Metros de Las Vias, 1621 Tigre, Buenos Aires\",\n        \"distance from given coordinates\": \"3962 meters\",\n        \"latitude\": -34.407101,\n        \"longitude\": -58.690188,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Starbucks\",\n        \"category\": \"Coffee Shop\",\n        \"address\": \"Ramal Pilar Km 36.5, Tortuguitas, 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"2396 meters\",\n        \"latitude\": -34.452248,\n        \"longitude\": -58.727146,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Hipermercado Coto\",\n        \"category\": \"Grocery Store / Supermarket\",\n        \"address\": \"Av Belgrano, 1619\",\n        \"distance from given coordinates\": \"3122 meters\",\n        \"latitude\": -34.418115,\n        \"longitude\": -58.725461,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Club House las Lomitas\",\n        \"category\": \"BBQ Joint\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"2937 meters\",\n        \"latitude\": -34.44352,\n        \"longitude\": -58.737002,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Verduleria Dona Rosa Benavidez\",\n        \"category\": \"Grocery Store / Supermarket\",\n        \"address\": \"Av. Alvear 3056, Buenos Aires\",\n        \"distance from given coordinates\": \"3877 meters\",\n        \"latitude\": -34.409792,\n        \"longitude\": -58.685566,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Club Banco Nación Rugby\",\n        \"category\": \"Rugby Pitch\",\n        \"address\": \"Hiroshima 1800 (esq. Fray Luis Beltrán), 5125 Malvinas Argentinas, Buenos Aires\",\n        \"distance from given coordinates\": \"4055 meters\",\n        \"latitude\": -34.476232,\n        \"longitude\": -58.714982,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Coto\",\n        \"category\": \"Retail\",\n        \"address\": \"Av Belgrano, 1619 Garin, Buenos Aires\",\n        \"distance from given coordinates\": \"3140 meters\",\n        \"latitude\": -34.417988,\n        \"longitude\": -58.725643,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Fútbol Nordelta\",\n        \"category\": \"Soccer Field\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4779 meters\",\n        \"latitude\": -34.430101,\n        \"longitude\": -58.6548,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"La T Parrilla y Restorán Natural\",\n        \"category\": \"BBQ Joint\",\n        \"address\": \"Golfers Golf Club 3089 Corner with el Moorlands 1667 Tortuguitas, 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"4498 meters\",\n        \"latitude\": -34.442865,\n        \"longitude\": -58.75425,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Natsuki\",\n        \"category\": \"Sushi Restaurant\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4511 meters\",\n        \"latitude\": -34.4418,\n        \"longitude\": -58.754405,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Vasalissa Chocolatier\",\n        \"category\": \"Candy Store\",\n        \"address\": \"Tortugas Open Mall (1er piso), Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"3706 meters\",\n        \"latitude\": -34.448586,\n        \"longitude\": -58.744378,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Torrepueblo\",\n        \"category\": \"Shopping Mall\",\n        \"address\": \"Libertad 50 Panamericana Ramal Escobar Km 40,5. (Ruta 9), 1621 Benavidez, Buenos Aires\",\n        \"distance from given coordinates\": \"4455 meters\",\n        \"latitude\": -34.406882,\n        \"longitude\": -58.730035,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"La Cantera Club\",\n        \"category\": \"Soccer Field\",\n        \"address\": \"Av. Patricias Argentinas, Buenos Aires\",\n        \"distance from given coordinates\": \"4815 meters\",\n        \"latitude\": -34.433223,\n        \"longitude\": -58.756903,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Areia\",\n        \"category\": \"Soccer Field\",\n        \"address\": \"Av. Patricias Argentinas 4005 (esquina Francia), 1619 Manuel Alberti, Buenos Aires\",\n        \"distance from given coordinates\": \"5412 meters\",\n        \"latitude\": -34.424276,\n        \"longitude\": -58.760641,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Km 40 BMW\",\n        \"category\": \"Motorcycle Dealership\",\n        \"address\": \"Panamerica Ruta 8 KM 40, Buenos Aires, Buenos Aires F.C.\",\n        \"distance from given coordinates\": \"5052 meters\",\n        \"latitude\": -34.444204,\n        \"longitude\": -58.760139,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Lirios del Talar Centro Comercial\",\n        \"category\": \"Shopping Mall\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"5279 meters\",\n        \"latitude\": -34.438877,\n        \"longitude\": -58.647529,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Bicisenda Nordelta\",\n        \"category\": \"Dog Park\",\n        \"address\": \"1670, Buenos Aires\",\n        \"distance from given coordinates\": \"5247 meters\",\n        \"latitude\": -34.406226,\n        \"longitude\": -58.666238,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Su Casa\",\n        \"category\": \"Spanish Restaurant\",\n        \"address\": \"Colectora Oeste Ramal Pilar, 1669 Del Viso, Buenos Aires\",\n        \"distance from given coordinates\": \"5072 meters\",\n        \"latitude\": -34.44577,\n        \"longitude\": -58.760204,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Club Hipico San Jorge Village\",\n        \"category\": \"Stable\",\n        \"address\": \"Buenos Aires\",\n        \"distance from given coordinates\": \"5458 meters\",\n        \"latitude\": -34.486126,\n        \"longitude\": -58.682859,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Asociación Alumni\",\n        \"category\": \"Sports Club\",\n        \"address\": \"Directorio 1155, 1667 Tortuguitas, Buenos Aires\",\n        \"distance from given coordinates\": \"4671 meters\",\n        \"latitude\": -34.464812,\n        \"longitude\": -58.747054,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Palta Meet&Eat - Lirios del Talar\",\n        \"category\": \"Deli\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"5241 meters\",\n        \"latitude\": -34.439057,\n        \"longitude\": -58.648014,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Parque Aereo Euca Tigre\",\n        \"category\": \"Rock Climbing Spot\",\n        \"address\": \"Italia 4950 (Arribeños), 1621 Benavidez, Buenos Aires\",\n        \"distance from given coordinates\": \"6580 meters\",\n        \"latitude\": -34.384216,\n        \"longitude\": -58.682805,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Daisuki Sushi\",\n        \"category\": \"Sushi Restaurant\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4459 meters\",\n        \"latitude\": -34.40636,\n        \"longitude\": -58.73037,\n        \"country\": \"AR\"\n    },\n    {\n        \"name\": \"Le Pain Quotidien\",\n        \"category\": \"Bakery\",\n        \"address\": \"Av. De Los Lagos 6660, 1670 Tigre, Buenos Aires\",\n        \"distance from given coordinates\": \"6507 meters\",\n        \"latitude\": -34.399784,\n        \"longitude\": -58.654,\n        \"country\": \"AR\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Places",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 9|vpCTM3FwmiVMUwrHdrZk2hyScVblY6Zdl5zBQo8Y",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/places?lat=23.6850&long=90.3563",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"places"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "23.6850"
+						},
+						{
+							"key": "long",
+							"value": "90.3563"
+						},
+						{
+							"key": "radius",
+							"value": "1000",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "20",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Places",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 9|vpCTM3FwmiVMUwrHdrZk2hyScVblY6Zdl5zBQo8Y",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/places?lat=23.6850&long=90.3563",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"places"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "23.6850"
+								},
+								{
+									"key": "long",
+									"value": "90.3563"
+								},
+								{
+									"key": "radius",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "20",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:34:01 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jun 2023 08:34:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"shothik.com\",\n        \"category\": \"Real Estate Service\",\n        \"address\": \"dokkin, arispur, gazipur - 1230\",\n        \"distance from given coordinates\": \"2507 meters\",\n        \"latitude\": 23.703029,\n        \"longitude\": 90.371121,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Fardin Furniture\",\n        \"category\": \"Furniture and Home Store\",\n        \"address\": \"Ashrafabad Main Rd, ঢাকা - 1211\",\n        \"distance from given coordinates\": \"3513 meters\",\n        \"latitude\": 23.710424,\n        \"longitude\": 90.37682,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Nayagoan,kamrangirchar\",\n        \"category\": \"N/A\",\n        \"address\": \"138 jhawlahati chaurasta, ঢাকা - 1211\",\n        \"distance from given coordinates\": \"4294 meters\",\n        \"latitude\": 23.723028,\n        \"longitude\": 90.3638,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Dholesshori Bridge\",\n        \"category\": \"Bridge\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4323 meters\",\n        \"latitude\": 23.64679,\n        \"longitude\": 90.348309,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"New Noborupa Ladies Tailors & Fabrics\",\n        \"category\": \"Tailor\",\n        \"address\": \"ঢাকা\",\n        \"distance from given coordinates\": \"4828 meters\",\n        \"latitude\": 23.72024,\n        \"longitude\": 90.384056,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Khan Mohammad Mashjid\",\n        \"category\": \"Historic and Protected Site\",\n        \"address\": \"Shekh S. Bazar, ঢাকা - 1211\",\n        \"distance from given coordinates\": \"4885 meters\",\n        \"latitude\": 23.720827,\n        \"longitude\": 90.384135,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"রুহিতপুর বাজার\",\n        \"category\": \"Clothing Store\",\n        \"address\": \"কেরানীগঞ্জ, ঢাকা\",\n        \"distance from given coordinates\": \"4913 meters\",\n        \"latitude\": 23.685213,\n        \"longitude\": 90.308021,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Shorif Hotel\",\n        \"category\": \"Restaurant\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4921 meters\",\n        \"latitude\": 23.718437,\n        \"longitude\": 90.388017,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Sbarro\",\n        \"category\": \"Pizzeria\",\n        \"address\": \"Lalbagh, ঢাকা\",\n        \"distance from given coordinates\": \"4986 meters\",\n        \"latitude\": 23.719857,\n        \"longitude\": 90.38717,\n        \"country\": \"BD\"\n    },\n    {\n        \"name\": \"Amligola mosjid road\",\n        \"category\": \"N/A\",\n        \"address\": \"N/A\",\n        \"distance from given coordinates\": \"4999 meters\",\n        \"latitude\": 23.722399,\n        \"longitude\": 90.383616,\n        \"country\": \"BD\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
