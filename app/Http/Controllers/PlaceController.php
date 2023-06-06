@@ -16,7 +16,6 @@ class PlaceController extends Controller
     }
 
 
-
     public function getNearbyPlaces(Request $request)
     {
         // Call the validation function to validate the input
