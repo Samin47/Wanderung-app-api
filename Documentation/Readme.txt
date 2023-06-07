@@ -37,9 +37,7 @@ To get started with the project, follow these steps:
 	-php artisan key:generate
 
 
-5. Create the database: (command or manually)
-	-php artisan db:create
-This will create the database specified in the .env file.
+5. Create the database
 
 6. Run database migrations: (command)
 	-php artisan migrate
